@@ -11,6 +11,7 @@
 |
 */
 
+/*
 Route::get('/', function () {
     $people = ['Taylor', 'Matt', 'Jeffrey'];
     
@@ -18,5 +19,7 @@ Route::get('/', function () {
         'people'=> $people
     ]);
 });
+*/
 
-
+Route::get('/','PagesController@home');
+Route::get('about','PagesController@about');
